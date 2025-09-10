@@ -1,14 +1,14 @@
-/// week01-4a.cpp ¨Ï¥Î C»y¨¥ ¼g
-#include <stdio.h> /// ¨Ï¥Î C»y¨¥ ¥~±¾
+/// week01-4a.cpp ä½¿ç”¨ Cèªžè¨€ å¯«
+#include <stdio.h> /// ä½¿ç”¨ Cèªžè¨€ å¤–æŽ›
 
 int main()
 {
 	int a, b;
-	scanf("%d %d", &a, &b); /// C»y¨¥ Åª¸ê®Æ
+	scanf("%d %d", &a, &b); /// Cèªžè¨€ è®€è³‡æ–™
 	int ans = 0;
 	for(int i=a; i<=b; i++){
 		if(i%3==0) ans += i;
 	}
-	printf("%d", ans); /// C»y¨¥ ¦L¸ê®Æ
+	printf("%d", ans); /// Cèªžè¨€ å°è³‡æ–™
 	return 0;
 }
