@@ -1,6 +1,6 @@
-# week01-2.py LeetCode ¾Ç²ß­pµe Python ª©¥»2 ¨Ï¥Î¦r¦êªº find()¨ç¦¡
+# week01-2.py LeetCode å­¸ç¿’è¨ˆç•« Python ç‰ˆæœ¬2 ä½¿ç”¨å­—ä¸²çš„ find()å‡½å¼
 # 28. Find the Index of the First Occurrence in a String
 
 class Solution:
     def strStr(self, haystack: str, needle: str) -> int:
-        return haystack.find(needle) #¥u¦³¤@¦æ
+        return haystack.find(needle) #åªæœ‰ä¸€è¡Œ
