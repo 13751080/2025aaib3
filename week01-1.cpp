@@ -1,22 +1,22 @@
 /// week01-1
-/// LeetCode ¾Ç²ß­pµe ¤j®ü¼´°w ¦b haystack §ä¨ì needle
+/// LeetCode å­¸ç¿’è¨ˆç•« å¤§æµ·æ’ˆé‡ åœ¨ haystack æ‰¾åˆ° needle
 /// 28. Find the Index of the First Occurrence in a String
 class Solution {
 public:
     int strStr(string haystack, string needle) {
-        /// ­n¥Î°j°é, §â©Ò¦³¥i¯àªº¦ì¸m³£§ä¹L¤@¦¸
-        /// ex. sadbutsad «ÜÃø¹L ­n§ä sad
-        /// i:0 sad  §â haystack °Å«e­±N­Ó¦r¥À
+        /// è¦ç”¨è¿´åœˆ, æŠŠæ‰€æœ‰å¯èƒ½çš„ä½ç½®éƒ½æ‰¾éä¸€æ¬¡
+        /// ex. sadbutsad å¾ˆé›£é è¦æ‰¾ sad
+        /// i:0 sad  æŠŠ haystack å‰ªå‰é¢Nå€‹å­—æ¯
         ///     sad
         /// i:1  sad
         ///      adb
         /// i:2   sad ...
         ///       dbu
         int H = haystack.length(), N = needle.length();
-        for(int i = 0; i <= H - N; i++) { // i¸Õ¹L©Ò¦³¦ì¸m
+        for(int i = 0; i <= H - N; i++) { // iè©¦éæ‰€æœ‰ä½ç½®
             if( haystack.substr(i, N) == needle) return i;
-             /// ±q i ¶}©l, °Å¥X N ­Ó¦r¥À ¡u³ºµM¬Û¦P¡v §ä¨ìµª®×!!!
+             /// å¾ i é–‹å§‹, å‰ªå‡º N å€‹å­—æ¯ ã€Œç«Ÿç„¶ç›¸åŒã€ æ‰¾åˆ°ç­”æ¡ˆ!!!
         }
-        return -1; /// ¨S¦³§ä¨ìµª®×, ­n¦^¶Ç -1 ¥Nªí¥¢±Ñ
+        return -1; /// æ²’æœ‰æ‰¾åˆ°ç­”æ¡ˆ, è¦å›å‚³ -1 ä»£è¡¨å¤±æ•—
     }
 };
