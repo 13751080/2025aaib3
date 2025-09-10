@@ -1,15 +1,15 @@
-/// week01-4a.cpp ¨Ï¥Î C++»y¨¥ ¼g
-#include <iostream> /// ¨Ï¥Î C++»y¨¥ ¥~±¾
-using namespace std; /// ¨Ï¥Î C++»y¨¥ªº©R¦WªÅ¶¡
+/// week01-4a.cpp ä½¿ç”¨ C++èªžè¨€ å¯«
+#include <iostream> /// ä½¿ç”¨ C++èªžè¨€ å¤–æŽ›
+using namespace std; /// ä½¿ç”¨ C++èªžè¨€çš„å‘½åç©ºé–“
 
 int main()
 {
 	int a, b;
-	cin >> a >> b; /// C++»y¨¥ Åª¸ê®Æ
+	cin >> a >> b; /// C++èªžè¨€ è®€è³‡æ–™
 	int ans = 0;
 	for(int i=a; i<=b; i++){
 		if(i%3==0) ans += i;
 	}
-	cout << ans; /// C++»y¨¥ ¦L¸ê®Æ
+	cout << ans; /// C++èªžè¨€ å°è³‡æ–™
 	return 0;
 }
